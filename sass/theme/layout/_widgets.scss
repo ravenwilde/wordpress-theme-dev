@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+## Widgets
+--------------------------------------------------------------*/
+.site-content-wrapper .widget-area {
+	border-top: 1.5em solid $secondary-text-color;
+	padding: 1.5em 1.5em 0;
+	width: 100%;
+}
+
+.widget-footer-area {
+	padding-top: 1.5em;
+}
+
+.widget-footer-top-area {
+	background-color: $primary-brand-color;
+	padding-bottom: 1.5em;
+}
+
+.widget-footer-bottom-area {
+	border-top: 24px solid $trump-red;
+	background-color: $trump-blue-dark;
+}
+
+.widget-footer-top-area + .widget-footer-bottom-area {
+	// border-top: 0;
+}

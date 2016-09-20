@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+.site-footer {
+	background-color: $trump-blue-dark;
+	border-top: 1px solid $dark-blue-grey;
+	padding: 1.5em 0;
+}
+
+.site-info {
+	display: none;
+}
+
+.site-info a {
+	color: $body-text-color;
+}
+
+.site-info a:focus,
+.site-info a:hover {
+	color: $light-grey;
+}
+
+.sep {
+	color: #f3f3f3;
+	padding: 0 0.5em;
+}

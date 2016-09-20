@@ -1,0 +1,84 @@
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+	color: $secondary-text-color;
+	text-decoration: none;
+	transition: all .1s ease-in;
+}
+
+a:visited {
+	font-weight: normal;
+}
+
+a:focus,
+a:hover {
+	color: $primary-brand-color;
+	outline: 0;
+}
+
+.comment-content a,
+.comment-reply-title small a,
+.entry-content a,
+.entry-footer a:focus,
+.entry-footer a:hover,
+.entry-summary a,
+.logged-in-as a,
+.pingback .comment-body > a,
+.site-info a:focus,
+.site-info a:hover,
+.taxonomy-description a {
+	box-shadow: 0 1px 0 0;
+}
+
+.comment-content a:focus,
+.comment-content a:hover,
+.comment-content a[href$=".png"],
+.comment-content a.button,
+.comment-reply-title small a:focus,
+.comment-reply-title small a:hover,
+.entry-content a:focus,
+.entry-content a:hover,
+.entry-content a[href$=".png"],
+.entry-content a.button,
+.entry-summary a:focus,
+.entry-summary a:hover,
+.entry-summary a[href$=".png"],
+.entry-summary a.button,
+.logged-in-as a:focus,
+.logged-in-as a:hover,
+.pingback .comment-body > a:focus,
+.pingback .comment-body > a:hover,
+.site .testimonial-featured-image,
+.site-content .wp-audio-shortcode a,
+.taxonomy-description a:focus,
+.taxonomy-description a:hover {
+	box-shadow: none;
+}
+
+.featured-content .hentry.has-post-thumbnail a,
+.page-template-panel-page .hentry.has-post-thumbnail a,
+.widget-footer-top-area a {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.comment-metadata a,
+.entry-footer a,
+.entry-header a,
+.featured-content .hentry.has-post-thumbnail a:focus,
+.featured-content .hentry.has-post-thumbnail a:hover,
+.page-template-panel-page .hentry.has-post-thumbnail a:focus,
+.page-template-panel-page .hentry.has-post-thumbnail a:hover,
+.widget-footer-top-area a:focus,
+.widget-footer-top-area a:hover {
+	color: inherit;
+}
+
+.comment-metadata a:focus,
+.comment-metadata a:hover,
+.entry-footer a:focus,
+.entry-footer a:hover,
+.entry-header a:focus,
+.entry-header a:hover {
+	color: $primary-brand-color;
+}

@@ -1,0 +1,233 @@
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: $body-text-color;
+	font-family: $font-family-sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.widget-footer-top-area,
+.widget-footer-top-area button,
+.widget-footer-top-area input,
+.widget-footer-top-area select,
+.widget-footer-top-area textarea {
+	color: $white;
+}
+
+.background-dark,
+.widget-footer-bottom-area {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	button,
+	input,
+	select,
+	textarea,
+	p,
+	a,
+	li {
+		color: $white;
+	}
+	a:hover {
+		color: $light-grey;
+	}
+}
+
+
+.entry-footer,
+.entry-meta,
+.site-info {
+	font-size: 13px;
+	font-size: 0.8125rem;
+	line-height: 1.3847;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title {
+	clear: both;
+	color: $secondary-text-color;
+	font-family: $font-family-headers;
+	font-weight: bold;
+	margin: 0 0 1.5rem;
+}
+
+.featured-content .hentry.has-post-thumbnail h1,
+.featured-content .hentry.has-post-thumbnail h2,
+.featured-content .hentry.has-post-thumbnail h3,
+.featured-content .hentry.has-post-thumbnail h4,
+.featured-content .hentry.has-post-thumbnail h5,
+.featured-content .hentry.has-post-thumbnail h6,
+.page-template-panel-page .hentry.has-post-thumbnail h1,
+.page-template-panel-page .hentry.has-post-thumbnail h2,
+.page-template-panel-page .hentry.has-post-thumbnail h3,
+.page-template-panel-page .hentry.has-post-thumbnail h4,
+.page-template-panel-page .hentry.has-post-thumbnail h5,
+.page-template-panel-page .hentry.has-post-thumbnail h6,
+.widget-footer-top-area h1,
+.widget-footer-top-area h2,
+.widget-footer-top-area h3,
+.widget-footer-top-area h4,
+.widget-footer-top-area h5,
+.widget-footer-top-area h6 {
+	color: inherit;
+}
+
+.site-title {
+	margin-bottom: 0;
+}
+
+h1,
+.entry-title,
+.post-type-archive-jetpack-testimonial .page-title {
+	font-size: 40px;
+	font-size: 2.5rem;
+	line-height: 1.2;
+}
+
+h2,
+.comment-reply-title,
+.comments-title {
+	font-size: 32px;
+	font-size: 2rem;
+	line-height: 1.125;
+}
+
+h3,
+.page-title,
+.widgettitle,
+.widget-title {
+	font-size: 25px;
+	font-size: 1.5625rem;
+	line-height: 1.2;
+}
+
+h4,
+.site-title {
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 1.5;
+}
+
+h5 {
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h6 {
+	font-size: 13px;
+	font-size: 0.8125rem;
+	line-height: 1.3847;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+address,
+p,
+pre {
+	margin: 0 0 1.5em;
+}
+
+blockquote {
+	border: 0 solid $primary-brand-color;
+    border-left-width: 2px;
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-style: italic;
+	line-height: 1.5;
+	margin: 0 0 1.5rem;
+	padding-left: 1.5rem;
+}
+
+blockquote * {
+	margin-bottom: 1.5rem;
+}
+
+blockquote cite {
+	color: $secondary-text-color;
+	display: block;
+}
+
+code,
+kbd,
+tt,
+var {
+	background: #f3f3f3;
+	font-family: Inconsolata, monospace;
+	padding: 0 0.25em;
+}
+
+.featured-content .hentry.has-post-thumbnail code,
+.featured-content .hentry.has-post-thumbnail kbd,
+.featured-content .hentry.has-post-thumbnail tt,
+.featured-content .hentry.has-post-thumbnail var,
+.page-template-panel-page .hentry.has-post-thumbnail code,
+.page-template-panel-page .hentry.has-post-thumbnail kbd,
+.page-template-panel-page .hentry.has-post-thumbnail tt,
+.page-template-panel-page .hentry.has-post-thumbnail var {
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.widget-footer-top-area code,
+.widget-footer-top-area kbd,
+.widget-footer-top-area tt,
+.widget-footer-top-area var {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+pre {
+	border: 1px solid #f3f3f3;
+	font-family: Inconsolata, monospace;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.5em;
+	position: relative;
+}
+
+.featured-content .hentry.has-post-thumbnail pre,
+.page-template-panel-page .hentry.has-post-thumbnail pre {
+	border-color: rgba(0, 0, 0, 0.25);
+}
+
+.widget-footer-top-area pre {
+	border-color: rgba(255, 255, 255, 0.25);
+}
+
+abbr,
+abbr[title],
+acronym {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: $primary-brand-color;
+	color: #fff;
+	padding: 0 0.25em;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}

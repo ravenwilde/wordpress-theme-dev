@@ -1,0 +1,104 @@
+/*--------------------------------------------------------------
+## Featured Content
+--------------------------------------------------------------*/
+.featured-content {
+	border-bottom: 1px solid #f3f3f3;
+	opacity: 0;
+	position: relative;
+}
+
+.featured-content .hentry {
+	-webkit-backface-visibility: hidden;
+	border-bottom: 0;
+	margin: 0;
+}
+
+.featured-content .hentry.has-post-thumbnail {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: 0;
+	color: #fff;
+	position: relative;
+	text-shadow: 0 0 0.15em rgba(0, 0, 0, 0.5);
+}
+
+.featured-content .has-post-thumbnail .entry-header {
+	color: inherit;
+}
+
+.featured-content .hentry.has-post-thumbnail:before {
+	background: rgba(0, 0, 0, 0.2);
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.featured-content .hentry.has-post-thumbnail .hentry-wrapper {
+	position: relative;
+}
+
+.featured-content .has-post-thumbnail .entry-header a:focus,
+.featured-content .has-post-thumbnail .entry-header a:hover,
+.featured-content .has-post-thumbnail .entry-footer,
+.featured-content .has-post-thumbnail .entry-footer a {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.featured-content .has-post-thumbnail .entry-header,
+.featured-content .has-post-thumbnail .entry-header a,
+.featured-content .has-post-thumbnail .entry-footer a:focus,
+.featured-content .has-post-thumbnail .entry-footer a:hover {
+	color: #fff;
+}
+
+.featured-content .hentry.has-post-thumbnail .entry-footer > span:not(:last-child):after {
+	color: rgba(255, 255, 255, 0.25);
+}
+
+/* Pagination */
+.featured-content .flex-control-paging {
+	border-top: 1px solid #f3f3f3;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	padding: 1.5em;
+	position: relative;
+}
+
+.featured-content .flex-control-paging:empty {
+	display: none;
+}
+
+.featured-content .flex-control-paging li {
+	display: block;
+	height: 0.75em;
+	margin: 0 0.125em;
+	width: 0.75em;
+}
+
+.featured-content .flex-control-paging a {
+	background: transparent;
+	border: 2px solid $primary-brand-color;
+	border-radius: 50%;
+	color: transparent;
+	display: block;
+	height: inherit;
+	line-height: 1;
+	position: relative;
+	text-align: center;
+	width: inherit;
+}
+
+.featured-content .flex-control-paging a:hover,
+.featured-content .flex-control-paging .flex-active {
+	background: $primary-brand-color;
+}

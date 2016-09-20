@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+## Panel Page Template
+--------------------------------------------------------------*/
+.page-template-home-panel-page,
+.page-template-panel-page {
+	.hentry.has-post-thumbnail {
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-bottom: 0;
+		color: #fff;
+		position: relative;
+		text-shadow: 0 0 0.15em rgba(0, 0, 0, 0.5);
+	}
+	.has-post-thumbnail .entry-header {
+		color: inherit;
+	}
+	.hentry + .has-post-thumbnail {
+		margin-top: -1.5em;
+	}
+	.hentry.has-post-thumbnail:before {
+		background: rgba(0, 0, 0, 0.2);
+		content: "";
+		display: block;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	.hentry.has-post-thumbnail .hentry-wrapper {
+		position: relative;
+	}
+}

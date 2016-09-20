@@ -1,0 +1,269 @@
+/*--------------------------------------------------------------
+HERO UNIT
+--------------------------------------------------------------*/
+/* Layout */
+body.home {
+	.homepage-hero-unit.hentry {
+		padding-bottom: 0;
+		@include media(min-width 896px) {
+			padding-top: 2em;
+		}
+		@include media(min-width 1020px) {
+			padding-top: 3em;
+		}
+		@include media(min-width 1200px) {
+			padding-top: 4em;
+		}
+		.hentry-wrapper {
+			@include outer-container(1200px);
+		}
+		.hero-unit-header-container {
+			@include span-columns(12);
+		}
+		.entry-content {
+			padding: 0;
+			&.format-standard {
+				@include span-columns(12);
+				margin-bottom: 2em;
+				@include media(min-width 1200px) {
+					margin-bottom: 3em;
+				}
+			}
+			&.format-aside {
+				@include span-columns(12);
+				@include media(min-width 896px) {
+					@include span-columns(7);
+					float: right;
+					min-height: em(150);
+					margin-right: 0;
+					margin-bottom: 1em;
+				}
+				@include media(min-width 1200px) {
+					@include span-columns(6);
+					float: right;
+					margin-bottom: 2em;
+					min-height: em(250);
+				}
+			}
+			&.format-video,
+			&.format-image {
+				@include span-columns(12);
+				@include media(min-width 896px) {
+					@include span-columns(7);
+					min-height: em(150);
+					margin-bottom: 2em;
+				}
+				@include media(min-width 1200px) {
+					@include span-columns(6);
+					margin-bottom: 3em;
+					min-height: em(250);
+				}	
+			}
+		}
+		.hero-image {
+			height: em(230); // 1:1.4 for display of current image
+			@include span-columns(12);
+			@include media(min-width 896px) {
+				height: em(205);
+				@include span-columns(5);
+				position: absolute;
+				bottom: 0;
+				margin-top: 2em;
+			}
+			@include media(min-width 1200px) {
+				height: em(300);
+				@include span-columns(6);
+			}
+		}
+		.title-caption {
+			@include span-columns(12);
+			@include media(min-width 896px) {
+				@include span-columns(5);
+				@include omega();
+			}
+			@include media(min-width 1200px) {
+				@include span-columns(6);
+				@include omega();
+			}	
+		}
+	}
+}
+body.home {
+	.homepage-hero-unit.hentry {
+		@include linear-gradient($trump-blue-purple, $trump-blue-dark);
+		border-bottom: 24px solid $trump-red;
+		.hero-unit-header-container {
+			text-align: center;
+		}
+		.hero-unit-header {
+			display: inline-block;
+			color: $white;
+			font-family: $font-family-headers;
+			font-size: em(14);
+			font-weight: 400;
+			text-transform: uppercase;
+			line-height: 1.2;
+			letter-spacing: 0.6px;
+			margin-top: 1em;
+			padding-bottom: .2em;
+			border-bottom: $white 2px solid;
+			@include media(min-width 896px) {
+				margin-top: 0;
+				font-size: em(12);
+			}
+		}
+		.entry-content {
+			text-align: center;
+			border: none;
+			.entry-title {
+				color: $white;
+				font-size: em(36);
+			}
+			p {
+				font-family: $font-family-headers;
+				font-size: em(14);
+				font-weight: 300;
+				letter-spacing: 0.6px;
+				@include media(min-width 370px) {
+					font-size: em(14);
+					letter-spacing: 0.9px;
+				}
+				@include media(min-width 896px) {
+					font-size: em(14);
+					letter-spacing: 0.6px;
+				}
+				@include media(min-width 1200px) {
+					font-size: em(16);
+					letter-spacing: 0.9px;
+				}
+			}
+			a {
+				color: $trump-blue-purple-desat;
+				text-decoration: none;
+				box-shadow: none;
+				&:hover {
+					color: $off-white;
+				}
+			}
+		}
+		.hero-image {
+			display: block;			
+			div {
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-size: contain;
+				background-position: bottom center;
+				background-repeat: no-repeat;
+				@include media(min-width 1200px) {
+					width: 95%;
+				}
+			}
+		}
+		.title-caption {
+			margin-top: 0;
+			@include media(min-width 896px) {
+				margin-top: em(24);				
+			}
+			.entry-title {
+				color: $white;
+				font-size: em(36);
+				text-align: center;
+				@include media(min-width 896px) {
+					text-align: left;
+				}
+			}
+		}
+		.wp-caption .wp-caption-text {
+			border-bottom: none;
+		}
+		.entry-footer {
+			display: none;
+		}
+	}
+}
+body.home #main .homepage-hero-unit.hentry {
+	.sharedaddy {
+		padding-bottom: 0;
+		border-bottom: none;
+		text-align: center;
+		h3 {
+			font-size: em(12);
+		}
+		li a {
+			margin-right: em(20);
+		}
+		li:nth-child(3) a {
+			margin-right: 0;
+		}
+	}
+}
+/*--------------------------------------------------------------
+TWO LANE FUNNEL
+--------------------------------------------------------------*/
+.two-lane-funnel {
+	@include outer-container(900px);	
+}
+.two-lane-funnel {
+	@include media(min-width 768px) {
+		@include row('table');
+	}
+	.option-one,
+	.option-two {
+		text-align: center;
+		@include media(min-width 768px) {
+			height: em(450);
+		}
+	}
+	.option-one {
+		background-color: $trump-blue-dark;
+		@include span-columns(12);
+		@include pad(100px 25px 100px 25px);
+		@include row('table');
+		@include media(min-width 768px) {
+			@include span-columns(6);
+		}
+		p {
+			color: mix($white, $trump-blue-dark, 70%); 
+		}
+		a.button.minimal:hover {
+			color: $trump-blue-dark;
+		}
+	}
+	.option-two {
+		background-color: $trump-red;
+		@include span-columns(12);
+		@include pad(100px 25px 100px 25px);
+		@include row('table');
+		@include media(min-width 768px) {
+			@include span-columns(6);	
+		}
+		p {
+			color: mix($black, $trump-red, 90%); 
+		}
+		a.button.minimal:hover {
+			color: $trump-red;
+		}
+	}
+	.option-content {
+		height: 100%;
+		@include display(flex);
+		@include flex-direction(column);
+		@include justify-content(space-between);
+	}
+	h1, h2, h3 {
+		color: $white;
+		font-size: 38px;
+	}
+	p {
+		font-size: em(16);
+		letter-spacing: 0.4px;
+	}
+	a.button.minimal {
+		color: $white;
+		margin-bottom: 0;
+		&:hover {
+			background-color: $white;
+		}
+	}
+}

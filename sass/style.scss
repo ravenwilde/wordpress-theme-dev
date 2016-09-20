@@ -1,0 +1,85 @@
+/*
+ Theme Name:   Shoreditch Child
+ Theme URI:    none
+ Description:  Shoreditch Child Theme - Custom for trumpunfit.com
+ Author:       Jennifer Scroggins
+ Author URI:   http://jennifer.codes
+ Template:     shoreditch
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         blue, white, light, two-columns, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, rtl-language-support, sticky-post, theme-options, translation-ready
+ Text Domain:  shoreditch-child
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Layout
+	## Header
+	## Footer
+	## Widgets
+# Navigation
+	## Links
+	## Main Menu
+	## Pagination
+	## Back to Top
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts & Pages
+	## Featured Content
+	## Panel Page Template
+	## Comments
+# Media
+	## Captions
+	## Galleries
+	## Playlists
+# Jetpack
+	## Contact Form
+	## Galleries
+	## Infinite Scroll
+	## PollDaddy
+	## Recipes
+	## Responsive Videos
+	## Sharedaddy
+	## Social Menu
+	## Testimonials
+	## Widgets
+# Extra Classes
+	## Buttons
+	## Columns
+# Responsive
+	## x >= 600px
+	## x >= 768px
+	## x >= 896px
+	## x >= 1020px
+--------------------------------------------------------------*/
+
+@import "bourbon/bourbon";
+@import "variables";
+@import "neat/neat";
+
+@import "theme/normalize";
+@import "theme/typography";
+@import "theme/elements";
+@import "theme/forms";
+@import "theme/layout/layout";
+@import "theme/navigation/navigation";
+@import "theme/accessibility";
+@import "theme/alignment";
+@import "theme/clearings";
+@import "theme/widgets";
+@import "theme/content/content";
+@import "theme/media/media";
+@import "theme/jetpack";
+@import "theme/extra-classes/extra";
+@import "theme/responsive/responsive";
+
+

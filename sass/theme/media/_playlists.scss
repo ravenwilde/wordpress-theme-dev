@@ -1,0 +1,66 @@
+/*--------------------------------------------------------------
+## Playlists
+--------------------------------------------------------------*/
+.site .wp-playlist {
+	background: transparent !important;
+	border-color: #f3f3f3;
+	color: inherit;
+	margin: 0 0 1.5em;
+	padding: 0.75em;
+}
+
+.site .wp-playlist,
+.site .wp-playlist-caption,
+.site .wp-playlist-item-title,
+.site .wp-playlist-item-length {
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.widget-footer-top-area .wp-playlist {
+	border-color: rgba(255, 255, 255, 0.25);
+}
+
+.site .wp-playlist a {
+	box-shadow: none;
+}
+
+.site .wp-playlist-current-item {
+	margin-bottom: 0.75em;
+}
+
+.site .wp-playlist-tracks {
+	margin-top: 0.75em;
+}
+
+.site .wp-playlist-light .wp-playlist-playing {
+	background: transparent;
+	color: inherit;
+}
+
+.site .wp-playlist-item {
+	border-bottom-color: #f3f3f3;
+	color: inherit;
+}
+
+.widget-footer-top-area .wp-playlist-item {
+	border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.site .wp-playlist-light .wp-playlist-caption {
+	color: $secondary-text-color;
+}
+
+.widget-footer-top-area .wp-playlist-light .wp-playlist-caption {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.site .wp-playlist-light a.wp-playlist-caption:focus,
+.site .wp-playlist-light a.wp-playlist-caption:hover {
+	color: $primary-brand-color;
+}
+
+.widget-footer-top-area .wp-playlist-light a.wp-playlist-caption:focus,
+.widget-footer-top-area .wp-playlist-light a.wp-playlist-caption:hover {
+	color: #fff;
+}

@@ -1,0 +1,259 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: $primary-brand-color;
+	border: 0;
+	border-radius: 5em;
+	color: #fff;
+	display: inline-block;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-weight: bold;
+	letter-spacing: 0.0625em;
+	line-height: 1.3847;
+	padding: 0.5625rem 1.5em;
+	text-transform: uppercase;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background: $secondary-text-color;
+	outline: none;
+}
+
+.widget-footer-top-area button,
+.widget-footer-top-area input[type="button"],
+.widget-footer-top-area input[type="reset"],
+.widget-footer-top-area input[type="submit"] {
+	background: #fff;
+	color: $primary-brand-color;
+}
+
+.widget-footer-top-area button:focus,
+.widget-footer-top-area input[type="button"]:focus,
+.widget-footer-top-area input[type="reset"]:focus,
+.widget-footer-top-area input[type="submit"]:focus,
+.widget-footer-top-area button:hover,
+.widget-footer-top-area input[type="button"]:hover,
+.widget-footer-top-area input[type="reset"]:hover,
+.widget-footer-top-area input[type="submit"]:hover {
+	background: rgba(255, 255, 255, 0.25);
+	color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+select,
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: #f3f3f3;
+	border: 0;
+	border-radius: 0;
+	box-sizing: border-box;
+	max-width: 100%;
+	padding: 0.375em;
+	width: 100%;
+}
+
+.widget-footer-top-area input[type="text"],
+.widget-footer-top-area input[type="email"],
+.widget-footer-top-area input[type="url"],
+.widget-footer-top-area input[type="password"],
+.widget-footer-top-area input[type="search"],
+.widget-footer-top-area input[type="number"],
+.widget-footer-top-area input[type="tel"],
+.widget-footer-top-area input[type="range"],
+.widget-footer-top-area input[type="date"],
+.widget-footer-top-area input[type="month"],
+.widget-footer-top-area input[type="week"],
+.widget-footer-top-area input[type="time"],
+.widget-footer-top-area input[type="datetime"],
+.widget-footer-top-area input[type="datetime-local"],
+.widget-footer-top-area input[type="color"],
+.widget-footer-top-area select,
+.widget-footer-top-area textarea {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+select:focus,
+textarea:focus {
+	background: transparent;
+	outline: 2px solid $primary-brand-color;
+}
+
+.widget-footer-top-area input[type="text"]:focus,
+.widget-footer-top-area input[type="email"]:focus,
+.widget-footer-top-area input[type="url"]:focus,
+.widget-footer-top-area input[type="password"]:focus,
+.widget-footer-top-area input[type="search"]:focus,
+.widget-footer-top-area input[type="number"]:focus,
+.widget-footer-top-area input[type="tel"]:focus,
+.widget-footer-top-area input[type="range"]:focus,
+.widget-footer-top-area input[type="date"]:focus,
+.widget-footer-top-area input[type="month"]:focus,
+.widget-footer-top-area input[type="week"]:focus,
+.widget-footer-top-area input[type="time"]:focus,
+.widget-footer-top-area input[type="datetime"]:focus,
+.widget-footer-top-area input[type="datetime-local"]:focus,
+.widget-footer-top-area input[type="color"]:focus,
+.widget-footer-top-area select:focus,
+.widget-footer-top-area textarea:focus {
+	outline-color: #fff;
+}
+
+label {
+	color: $secondary-text-color;
+}
+
+.widget-footer-top-area label {
+	color: #fff;
+}
+
+/* Placeholder */
+::input-placeholder {
+	color: $body-text-color;
+}
+
+.widget-footer-top-area ::input-placeholder {
+	color: #fff;
+}
+
+::-webkit-input-placeholder {
+	color: $body-text-color;
+}
+
+.widget-footer-top-area ::-webkit-input-placeholder {
+	color: #fff;
+}
+
+:-moz-placeholder {
+	color: $body-text-color;
+	opacity: 1;
+}
+
+.widget-footer-top-area :-moz-placeholder {
+	color: #fff;
+}
+
+::-moz-placeholder {
+	color: $body-text-color;
+	opacity: 1;
+}
+
+.widget-footer-top-area ::-moz-placeholder {
+	color: #fff;
+}
+
+:-ms-input-placeholder {
+	color: $body-text-color;
+}
+
+.widget-footer-top-area :-ms-input-placeholder {
+	color: #fff;
+}
+
+/* Search */
+.search-form {
+	position: relative;
+	padding-bottom: 1.5em;
+}
+
+.search-form .search-field {
+	padding-right: 2.625em;
+}
+
+.search-form .search-submit {
+	background: transparent;
+	border-radius: 0;
+	font-size: 16px;
+	font-size: 1rem;
+	height: 2.25em;
+	line-height: 1;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	text-transform: none;
+	top: 0;
+	width: 2.25em;
+}
+
+.search-form .search-submit:focus,
+.search-form .search-submit:hover {
+	background: transparent;
+}
+
+.search-form .search-submit:before {
+	background: $primary-brand-color;
+	border-radius: 50%;
+	content: "\f400";
+	display: block;
+	font-family: Genericons;
+	height: 1.75em;
+	left: 50%;
+	line-height: 1.75;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 1.75em;
+}
+
+.widget-footer-top-area .search-form .search-submit:before {
+	background: #fff;
+}
+
+.search-form .search-submit:focus:before,
+.search-form .search-submit:hover:before {
+	background: $secondary-text-color;
+}
+
+.widget-footer-top-area .search-form .search-submit:focus:before,
+.widget-footer-top-area .search-form .search-submit:hover:before {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+/* Password Protected */
+.post-password-form input[type="submit"] {
+	margin-top: 1.5em;
+}

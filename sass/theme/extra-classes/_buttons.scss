@@ -1,0 +1,161 @@
+/*--------------------------------------------------------------
+## Buttons
+--------------------------------------------------------------*/
+.button {
+	background: $primary-brand-color;
+	border: 0;
+	border-radius: 5em;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-weight: bold;
+	letter-spacing: 0.0625em;
+	line-height: 1.3847;
+	padding: 0.69231em 1.5em;
+	text-align: center;
+	text-shadow: none;
+	text-transform: uppercase;
+	transition: all .2s ease-in;
+}
+
+.button,
+.button:focus,
+.button:hover {
+	color: #fff;
+}
+
+.button:focus,
+.button:hover {
+	background: $secondary-text-color;
+}
+
+.button.minimal {
+	background: transparent;
+	color: $primary-brand-color;
+	position: relative;
+}
+
+.button.minimal:before {
+	border: 2px solid;
+	border-radius: 5em;
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.button.minimal:focus,
+.button.minimal:hover {
+	background: $primary-brand-color;
+	box-shadow: none;
+	color: #fff;
+}
+
+.button.minimal:focus:before,
+.button.minimal:hover:before {
+	display: none;
+}
+
+/* Featured Content, Panel Page Template & Widget Footer Top Area */
+.featured-content .hentry.has-post-thumbnail .button,
+.page-template-panel-page .hentry.has-post-thumbnail .button {
+	background: $primary-brand-color;
+	color: #fff;
+}
+
+.widget-footer-top-area .button {
+	background: #fff;
+	color: $primary-brand-color;
+}
+
+.featured-content .hentry.has-post-thumbnail .button:focus,
+.featured-content .hentry.has-post-thumbnail .button:hover,
+.page-template-panel-page .hentry.has-post-thumbnail .button:focus,
+.page-template-panel-page .hentry.has-post-thumbnail .button:hover {
+	background: #fff;
+	color: $primary-brand-color;
+}
+
+.widget-footer-top-area .button:focus,
+.widget-footer-top-area .button:hover {
+	background: rgba(255, 255, 255, 0.25);
+	color: #fff;
+}
+
+.featured-content .hentry.has-post-thumbnail .button.minimal,
+.page-template-panel-page .hentry.has-post-thumbnail .button.minimal,
+.widget-footer-top-area .button.minimal {
+	background: transparent;
+	color: #fff;
+}
+
+.featured-content .hentry.has-post-thumbnail .button.minimal,
+.page-template-panel-page .hentry.has-post-thumbnail .button.minimal {
+	text-shadow: 0 0 0.15em rgba(0, 0, 0, 0.5);
+}
+
+.featured-content .hentry.has-post-thumbnail .button.minimal:focus,
+.featured-content .hentry.has-post-thumbnail .button.minimal:hover,
+.page-template-panel-page .hentry.has-post-thumbnail .button.minimal:focus,
+.page-template-panel-page .hentry.has-post-thumbnail .button.minimal:hover {
+	background: $primary-brand-color;
+	color: #fff;
+	text-shadow: none;
+}
+
+.widget-footer-top-area .button.minimal:focus,
+.widget-footer-top-area .button.minimal:hover {
+	background: #fff;
+	color: $primary-brand-color;
+}
+
+/* Main Menu */
+.main-navigation .button {
+	border: 0;
+	display: block;
+	margin-bottom: 0.75em;
+	margin-top: 0.75em;
+	padding: 0;
+	position: relative;
+}
+
+.main-navigation .button:before {
+	background: #f3f3f3;
+	content: "";
+	display: block;
+	height: 1px;
+	-webkit-transform: translateY(-0.75em);
+	-moz-transform: translateY(-0.75em);
+	-ms-transform: translateY(-0.75em);
+	transform: translateY(-0.75em);
+	width: 100%;
+}
+
+.main-navigation .button a {
+	border-radius: 5em;
+	padding: 0.69231em 1.5em;
+}
+
+.main-navigation .primary-menu > .button a {
+	border: 0;
+}
+
+.main-navigation .button a,
+.main-navigation .button a:focus,
+.main-navigation .button a:hover,
+.main-navigation .button.minimal a:focus,
+.main-navigation .button.minimal a:hover {
+	color: #fff;
+}
+
+.main-navigation .button.minimal a:focus {
+	background: $primary-brand-color;
+}
+
+.main-navigation .button.minimal a {
+	color: $primary-brand-color;
+}

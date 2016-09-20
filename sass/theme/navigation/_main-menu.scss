@@ -1,0 +1,133 @@
+/*--------------------------------------------------------------
+## Main Menu
+--------------------------------------------------------------*/
+.site-menu {
+	display: none;
+	-webkit-flex: 0 1 100%;
+	-ms-flex: 0 1 100%;
+	flex: 0 1 100%;
+}
+
+.site-menu.toggled-on {
+	display: block;
+}
+
+.main-navigation {
+	margin-top: 1.5em;
+}
+
+.main-navigation .primary-menu {
+	border-bottom: 1px solid;
+}
+
+.main-navigation ul {
+	color: #f3f3f3;
+	display: none;
+	list-style: none;
+	margin: 0;
+}
+
+.main-navigation.toggled-on ul,
+.main-navigation.toggled-on ul.toggled-on {
+	display: block;
+}
+
+.main-navigation.toggled-on ul ul {
+	display: none;
+}
+
+.main-navigation .menu-item-has-children > a {
+	margin-right: 3.5em;
+	position: relative;
+}
+
+.main-navigation .menu-item-has-children > a:after {
+	color: $primary-brand-color;
+	content: "\f431";
+	display: none;
+	font-family: Genericons;
+	line-height: 1;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.main-navigation ul ul .menu-item-has-children > a:after {
+	right: 0.75em;
+	-webkit-transform: translateY(-50%) rotate(-90deg);
+	-moz-transform: translateY(-50%) rotate(-90deg);
+	-ms-transform: translateY(-50%) rotate(-90deg);
+	transform: translateY(-50%) rotate(-90deg);
+}
+
+.main-navigation li {
+	border-top: 1px solid;
+	position: relative;
+}
+
+.main-navigation a {
+	color: $secondary-text-color;
+	display: block;
+	font-weight: bold;
+	padding: 0.75em 0;
+}
+
+.main-navigation a:focus,
+.main-navigation a:hover {
+	color: $primary-brand-color;
+}
+
+.main-navigation ul ul {
+	background: #fff;
+	margin-left: 1.5em;
+}
+
+.main-navigation .primary-menu .current_page_item > a,
+.main-navigation .primary-menu .current-menu-item > a,
+.main-navigation .primary-menu .current_page_ancestor > a {
+	border-color: $primary-brand-color;
+}
+
+/* Menu Toggle */
+.menu-toggle {
+	margin-top: 1.5em;
+}
+
+/* Dropdown Toggle */
+.dropdown-toggle {
+	border: 0.25em solid;
+	border-radius: 50%;
+	font-size: 16px;
+	font-size: 1rem;
+	height: 2.5em;
+	line-height: 1;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	text-transform: none;
+	top: 0.25em;
+	width: 2.5em;
+}
+
+.dropdown-toggle:before {
+	content: "\f431";
+	font-family: Genericons;
+	height: 1em;
+	left: 50%;
+	line-height: 1;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 1em;
+}
+
+.dropdown-toggle.toggled-on:before {
+	content: "\f432";
+}
